@@ -1,84 +1,144 @@
 # Oasis: Unemployment Prediction Dashboard
 
 ## Project Overview
-This project analyzes unemployment data in India and builds a machine learning model to **predict unemployment rates** based on regional and demographic features. It also provides an **interactive Streamlit dashboard** for visualization and predictions.
+
+This project analyzes unemployment data in India and builds machine learning models to predict unemployment rates based on regional and demographic factors. It also provides an interactive Streamlit dashboard for data visualization and unemployment rate prediction.
 
 ---
 
 ## Features
-- Cleaned and merged unemployment datasets  
-- Trained **Linear Regression** and **Random Forest** models  
-- Fine-tuned Random Forest for improved accuracy  
-- Saved trained model for reuse using `joblib`  
-- Interactive Streamlit dashboard for:
-  - Predicting unemployment rates by region and area  
-  - Visualizing trends over time  
-  - Comparing Rural vs Urban unemployment  
-  - Comparing predicted vs actual unemployment rates  
+
+* Cleaned and merged unemployment datasets
+* Trained Linear Regression and Random Forest models
+* Fine-tuned Random Forest for improved performance
+* Saved trained models using Joblib for future use
+* Interactive Streamlit dashboard for:
+
+  * Predicting unemployment rates by region and area
+  * Visualizing unemployment trends over time
+  * Comparing Rural vs Urban unemployment
+  * Comparing predicted and actual unemployment rates
 
 ---
 
-## Folder Structure
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Streamlit
+* Joblib
+
+---
+
+## Project Structure
+
+```text
 oasis/
 │
 ├── data/
-│ ├── raw/ # Original datasets
-│ └── cleaned/ # Cleaned/merged datasets
+│   ├── raw/
+│   └── cleaned/
 │
-├── models/ # Saved Random Forest model (.pkl)
+├── models/
+│   └── random_forest_model.pkl
 │
-├── notebooks/ # Jupyter notebooks
-│ └── 1_data_cleaning.ipynb
+├── notebooks/
+│   └── 1_data_cleaning.ipynb
 │
-├── app.py # Streamlit dashboard script
-├── requirements.txt # Python dependencies
+├── app.py
+├── requirements.txt
 └── README.md
-
-
+```
 
 ---
 
-## How to Run the Dashboard
-1. Clone this repository:
+## Model Development
+
+### Linear Regression
+
+* Used as a baseline model for unemployment prediction.
+
+### Random Forest Regressor
+
+* Trained and fine-tuned for improved prediction accuracy.
+* Saved using Joblib for deployment in the Streamlit application.
+
+---
+
+## Results
+
+* Successfully analyzed unemployment trends across different regions.
+* Developed machine learning models for unemployment rate prediction.
+* Built an interactive Streamlit dashboard for visualization and forecasting.
+* Random Forest model provided better prediction performance than the baseline model.
+
+---
+
+## Installation
+
+### Clone the Repository
+
 ```bash
-git clone https://github.com/swethasuresh1903/oasis.git
-Navigate to the project folder:
-
-##navigate to project folder
+git clone https://github.com/swethasuresh1905/oasis.git
 cd oasis
+```
 
-##create visual env
+### Create a Virtual Environment
+
+```bash
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1   # Windows PowerShell
+```
 
-##install dependencies
+### Activate the Environment
+
+**Windows PowerShell**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+### Run the Dashboard
 
-##to run streamlit app
+```bash
 streamlit run app.py
+```
 
+---
 
-##Dependencies
-Python 3.8+
+## Dependencies
 
-pandas
+* Python 3.8+
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Streamlit
+* Joblib
 
-numpy
+---
 
-scikit-learn
+## Future Enhancements
 
-matplotlib
+* Add additional forecasting models
+* Deploy dashboard to cloud platforms
+* Add real-time unemployment data updates
+* Improve dashboard visualizations
 
-seaborn
+---
 
-streamlit
+## Author
 
-joblib
+**Swetha Suresh**
 
-##nstall dependecies via 
-pip install -r requirements.txt
-
-Author
-Swetha Suresh
-Email: swethasuresh1905@gmail.com
+B.Tech Artificial Intelligence & Data Science
